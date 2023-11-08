@@ -145,8 +145,6 @@ if (isset($_GET["deletevalue"])) {
             </thead>
             <tbody>
                 <tr>
-
-
                     <?php
                     require 'php/connection.php';
                     $showsql = "Select * from info ";
@@ -168,8 +166,6 @@ if (isset($_GET["deletevalue"])) {
                             echo "<td>
                     <button type='button' class='btn btn-warning deletes' id=d" . $row["id"] . ">Delete</button>
                     <button type='button'  class='btn btn-primary edits' name='edits' data-bs-toggle='modal' data-bs-target='#exampleModal' id=" . $row["id"] . "  >Edit</button> </td>
-                    
-                    
                     
                     </tr>";
 
@@ -198,7 +194,6 @@ if (isset($_GET["deletevalue"])) {
 
     <script src="js/update.js"></script>
     <script src="Js/delete.js"></script>
-    <script src="Js/toggleDarkMode.js"></script>
 
 </body>
 
